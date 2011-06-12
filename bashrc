@@ -1,10 +1,11 @@
-export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/lib/postgresql84/bin:/opt/local/lib/mysql5/bin:/opt/local/lib/php/bin:~/bin:/usr/local/mongodb/bin:/Applications/plt_scheme/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacad
 export EDITOR='vim'
 export GREP_OPTIONS='--color=auto'
+export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 
 alias rc='rake_commit'
 alias ll='ls -la'
@@ -25,18 +26,11 @@ if [ -f ~/.ec2rc ]; then
   source ~/.ec2rc
 fi
 
-if [ -f /opt/local/etc/bash_completion ]; then
-  source /opt/local/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
 
-if [ -f /opt/local/share/doc/git-core/contrib/completion/git-completion.bash ]; then
-  source /opt/local/share/doc/git-core/contrib/completion/git-completion.bash
-fi
-
-if [[ -s ~/.rvm/scripts/rvm ]]; then
-  source ~/.rvm/scripts/rvm
-fi
+[[ -s "/Users/Thoughtworks/.rvm/scripts/rvm" ]] && source "/Users/Thoughtworks/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
-cat ~/.reminders

@@ -3,4 +3,8 @@ export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
 export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
 export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+export AMAZON_ACCESS_KEY_ID=AKIAIS75ZCSKNC2RHIDQ
+export AMAZON_SECRET_ACCESS_KEY=`cat $EC2_HOME/access_key_$AMAZON_ACCESS_KEY_ID`
+export RAPID_FTR_IDENTITY_FILE=/Users/ThoughtWorks/projects/rapid/rapidftr_ci_2011_05_22.pem
+export INTERACTIVE=true
 
