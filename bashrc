@@ -1,6 +1,6 @@
-export PATH=/usr/local/bin:$PATH
+export JAVA_HOME=/Library/Java/Home
+export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:/Users/hume/Projects/code/conf/vms/ruby/jruby/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacad
 export EDITOR='vim'
@@ -26,11 +26,15 @@ if [ -f ~/.ec2rc ]; then
   source ~/.ec2rc
 fi
 
+if [ -f ~/.im_aliases ]; then
+  source ~/.im_aliases
+fi
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-[[ -s "/Users/Thoughtworks/.rvm/scripts/rvm" ]] && source "/Users/Thoughtworks/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -s "/Users/hume/.rvm/scripts/rvm" ]] && source "/Users/hume/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
