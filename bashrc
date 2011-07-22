@@ -15,6 +15,7 @@ alias lein-repl='rlwrap lein repl'
 alias coffee-repl='rlwrap coffee -i'
 alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+alias prrp='git pull --rebase && rake && git push'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
