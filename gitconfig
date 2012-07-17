@@ -1,0 +1,16 @@
+[alias]
+	st = status
+	di = diff
+	co = checkout
+	w = whatchanged
+	pull = pull --ff-only
+[user]
+	name = John Hume
+[color]
+	ui = true
+[push]
+	default = upstream
+[rebase]
+	autosquash = true
+[format]
+  pretty = format:"%C(yellow)%h %C(cyan)%ad %C(magenta)%an%Creset | %s%+b"
