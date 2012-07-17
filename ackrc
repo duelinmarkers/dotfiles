@@ -1,1 +1,4 @@
 --type-set=cucumber=.feature
+--type-set=haml=.haml
+--type-set=markdown=.md
+--type-set=conf=.conf
