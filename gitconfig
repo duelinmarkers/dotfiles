@@ -6,6 +6,7 @@
 	pull = pull --ff-only
 [user]
 	name = John Hume
+	email = duelin.markers@gmail.com
 [color]
 	ui = true
 [push]
