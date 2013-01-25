@@ -6,6 +6,7 @@ export LSCOLORS=GxFxCxDxBxegedabagacad
 export EDITOR='vim'
 export GREP_OPTIONS='--color=auto'
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+export FIG_REMOTE_URL=ftp://devnas/builds/Fig/repos
 
 alias rc='rake_commit'
 alias ll='ls -la'
