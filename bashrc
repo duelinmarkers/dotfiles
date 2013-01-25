@@ -1,5 +1,5 @@
 export JAVA_HOME=/Library/Java/Home
-export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:/Users/hume/Projects/code/conf/vms/ruby/jruby/bin:$PATH
+export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:$HOME/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacad
@@ -25,10 +25,6 @@ PS1='\[\033[01;34m\]\h:\[\033[01;36m\]\w\[\033[00m\]\[\033[01;32m\]$(parse_git_b
 
 if [ -f ~/.ec2rc ]; then
   source ~/.ec2rc
-fi
-
-if [ -f ~/.im_aliases ]; then
-  source ~/.im_aliases
 fi
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
