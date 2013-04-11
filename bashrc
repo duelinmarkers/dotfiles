@@ -3,7 +3,8 @@ export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:$HOME/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagacad
-export EDITOR='vim'
+export EDITOR=vim
+export VISUAL=$EDITOR
 export GREP_OPTIONS='--color=auto'
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
 export FIG_REMOTE_URL=ftp://devnas/builds/Fig/repos
