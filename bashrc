@@ -1,4 +1,5 @@
-export JAVA_HOME=/Library/Java/Home
+if [ -e /site/apps/jdk/current ]; then export JAVA_HOME=/site/apps/jdk/current; fi
+if [ -e /Library/Java/Home ]; then export JAVA_HOME=/Library/Java/Home; fi
 export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:$HOME/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export CLICOLOR=1
