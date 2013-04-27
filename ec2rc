@@ -8,5 +8,7 @@ if [ -d ~/.ec2 ]; then
   export AMAZON_SECRET_ACCESS_KEY=`cat $EC2_HOME/access_key_$AMAZON_ACCESS_KEY_ID`
   export RAPID_FTR_IDENTITY_FILE=/home/hume/Projects/rapid/rapidftr_ci_2011_05_22.pem
   export INTERACTIVE=true
+  # These are for the aws command-line client
+  export EC2_ACCESS_KEY=$AMAZON_ACCESS_KEY_ID
+  export EC2_SECRET_KEY=$AMAZON_SECRET_ACCESS_KEY
 fi
-
