@@ -17,3 +17,5 @@
   pretty = format:"%C(yellow)%h %C(cyan)%ad %C(magenta)%an%Creset | %s%+b"
 [pull]
 	rebase = true
+[diff]
+	renames = true
