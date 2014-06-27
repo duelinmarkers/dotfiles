@@ -2,6 +2,7 @@
         st = status
         di = diff
         co = checkout
+        ll = log --graph --pretty=format:\"%C(yellow)%h %C(cyan)%ad%C(yellow)%d %C(magenta)%an%Creset | %s%+b\"
 [user]
         name = John Hume
         email = duelin.markers@gmail.com
@@ -11,8 +12,6 @@
         default = tracking
 [rebase]
         autosquash = true
-[format]
-        pretty = format:"%C(yellow)%h %C(cyan)%ad%C(yellow)%d %C(magenta)%an%Creset | %s%+b"
 [pull]
         rebase = true
 [diff]
