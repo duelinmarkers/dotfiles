@@ -1,20 +1,20 @@
 [alias]
-	st = status
-	di = diff
-	co = checkout
-	w = whatchanged
+        st = status
+        di = diff
+        co = checkout
+        w = whatchanged
 [user]
-	name = John Hume
-	email = duelin.markers@gmail.com
+        name = John Hume
+        email = duelin.markers@gmail.com
 [color]
-	ui = true
+        ui = true
 [push]
-	default = tracking
+        default = tracking
 [rebase]
-	autosquash = true
+        autosquash = true
 [format]
-  pretty = format:"%C(yellow)%h %C(cyan)%ad %C(magenta)%an%Creset | %s%+b"
+        pretty = format:"%C(yellow)%h %C(cyan)%ad %C(magenta)%an%Creset | %s%+b"
 [pull]
-	rebase = true
+        rebase = true
 [diff]
-	renames = true
+        renames = true
