@@ -3,7 +3,6 @@
 	di = diff
 	co = checkout
 	w = whatchanged
-	pull = pull --ff-only
 [user]
 	name = John Hume
 	email = duelin.markers@gmail.com
