@@ -2,7 +2,6 @@
         st = status
         di = diff
         co = checkout
-        w = whatchanged
 [user]
         name = John Hume
         email = duelin.markers@gmail.com
