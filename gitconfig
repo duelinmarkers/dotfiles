@@ -12,7 +12,7 @@
 [rebase]
         autosquash = true
 [format]
-        pretty = format:"%C(yellow)%h %C(cyan)%ad %C(magenta)%an%Creset | %s%+b"
+        pretty = format:"%C(yellow)%h %C(cyan)%ad%C(yellow)%d %C(magenta)%an%Creset | %s%+b"
 [pull]
         rebase = true
 [diff]
