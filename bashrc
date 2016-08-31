@@ -4,7 +4,6 @@ export PATH=/usr/local/bin:$JAVA_HOME/bin:/usr/local/mysql/bin:$HOME/bin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export EDITOR=vim
 export VISUAL=$EDITOR
-export GREP_OPTIONS='--color=auto'
 export FIG_REMOTE_URL=ftp://devnas/builds/Fig/repos
 
 if [ -e $HOME/.localenv ]; then source $HOME/.localenv; fi
