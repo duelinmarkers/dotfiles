@@ -45,3 +45,7 @@ fi
 
 export GIT_PS1_SHOWDIRTYSTATE=y
 PS1='\[\033[01;34m\]\h:\[\033[01;36m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1)\[\033[00m\]\$ '
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export PATH="$HOME/.cargo/bin:$PATH"
