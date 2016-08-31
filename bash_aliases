@@ -9,3 +9,6 @@ alias coffee-repl='rlwrap coffee -i'
 alias mysql='/usr/local/mysql/bin/mysql'
 alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 alias prrp='git pull --rebase && rake && git push'
+alias g=git
+alias gd='git diff'
+alias gs='git status'
