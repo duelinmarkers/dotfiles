@@ -96,8 +96,3 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
-
-export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:$HOME/Apps/apache-maven-3.3.9/bin"
-
-export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
