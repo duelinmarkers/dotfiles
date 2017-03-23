@@ -31,6 +31,10 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     go
+     html
+     yaml
+     clojure
      rust
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
