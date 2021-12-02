@@ -41,6 +41,7 @@ This function should only modify configuration layer settings."
      yaml
      clojure
      rust
+     elm
      ;; extra-langs ; for Arduino ; commented 2021-10-16 due to not found
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -403,7 +404,7 @@ It should only modify the values of Spacemacs settings."
    ;;   :size-limit-kb 1000)
    ;; When used in a plist, `visual' takes precedence over `relative'.
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
 
    ;; Code folding method. Possible values are `evil', `origami' and `vimish'.
    ;; (default 'evil)
