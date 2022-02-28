@@ -1,6 +1,7 @@
 [alias]
         st = status
         di = diff
+        ds = diff --staged
         co = checkout
         ci = commit -v
         ll = log --graph --pretty=format:\"%C(yellow)%h %C(cyan)%ad%C(yellow)%d %C(magenta)%an%Creset | %s%+b\"
