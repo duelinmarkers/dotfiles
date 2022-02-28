@@ -123,6 +123,11 @@ complete -o nospace -C /usr/bin/terraform terraform
 
 eval "$(ssh-agent)"
 
+# to autorun bundle / yarn when relevant files change
+export ENABLE_HOOK_AUTO_INSTALL=1
+# BT env
+export KBDEBUG_USER=jhume
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
