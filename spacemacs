@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(javascript
+   '(csv
+     javascript
      purescript
      sql
      ruby
@@ -42,6 +43,7 @@ This function should only modify configuration layer settings."
      clojure
      rust
      elm
+     terraform
      ;; extra-langs ; for Arduino ; commented 2021-10-16 due to not found
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -577,8 +579,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
-   (quote
-    (tern npm-mode nodejs-repl livid-mode skewer-mode js2-refactor yasnippet multiple-cursors js2-mode js-doc import-js grizzl helm-gtags ggtags dap-mode lsp-treemacs bui lsp-mode counsel-gtags counsel swiper ivy add-node-modules-path helm-themes helm-swoop helm-projectile helm-mode-manager helm-gitignore helm-flx helm-descbinds helm-css-scss helm-ag ace-jump-helm-line psc-ide flycheck company dash-functional yaml-mode ws-butler winum which-key wgrep web-mode volatile-highlights vi-tilde-fringe uuidgen use-package toml-mode toc-org thrift tagedit stan-mode sql-indent spaceline smex smeargle slim-mode scss-mode scad-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe restart-emacs request rbenv rake rainbow-delimiters racer qml-mode pug-mode psci popwin persp-mode paradox orgit org-plus-contrib org-bullets open-junk-file neotree move-text mmm-mode minitest matlab-mode markdown-toc magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode julia-mode ivy-hydra indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-make google-translate golden-ratio go-guru go-eldoc gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu emmet-mode elisp-slime-nav dumb-jump define-word counsel-projectile column-enforce-mode clj-refactor clean-aindent-mode cider-eval-sexp-fu chruby cargo bundler bracketed-paste auto-highlight-symbol auto-compile arduino-mode aggressive-indent adaptive-wrap ace-window ace-link))))
+   '(csv-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-gitignore helm-flx helm-descbinds helm-css-scss helm-ag ace-jump-helm-line psc-ide flycheck company dash-functional yaml-mode ws-butler winum which-key wgrep web-mode volatile-highlights vi-tilde-fringe uuidgen use-package toml-mode toc-org thrift tagedit stan-mode sql-indent spaceline smex smeargle slim-mode scss-mode scad-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe restart-emacs request rbenv rake rainbow-delimiters racer qml-mode pug-mode psci popwin persp-mode paradox orgit org-plus-contrib org-bullets open-junk-file neotree move-text mmm-mode minitest matlab-mode markdown-toc magit-gitflow macrostep lorem-ipsum linum-relative link-hint less-css-mode julia-mode ivy-hydra indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-make google-translate golden-ratio go-guru go-eldoc gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu emmet-mode elisp-slime-nav dumb-jump define-word counsel-projectile column-enforce-mode clj-refactor clean-aindent-mode cider-eval-sexp-fu chruby cargo bundler bracketed-paste auto-highlight-symbol auto-compile arduino-mode aggressive-indent adaptive-wrap ace-window ace-link)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
