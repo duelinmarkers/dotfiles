@@ -7,8 +7,9 @@
         ll = log --graph --pretty=format:\"%C(yellow)%h %C(cyan)%ad%C(yellow)%d %C(magenta)%an%Creset | %s%+b\"
         spp = !git stash && git pull && git stash pop
         amend = commit --amend -C HEAD
-        pulease = push --force-with-lease
+        pplease = push --force-with-lease
         recents = !git branch --sort=committerdate | tail
+        fmain = fetch origin main:main
 [user]
         name = John Hume
         email = duelin.markers@gmail.com

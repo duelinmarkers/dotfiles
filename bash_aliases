@@ -12,3 +12,4 @@ alias prrp='git pull --rebase && rake && git push'
 alias g=git
 alias gd='git diff'
 alias gs='git status'
+alias be='bundle exec'
